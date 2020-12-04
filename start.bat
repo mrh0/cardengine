@@ -1,0 +1,1 @@
+cd client && build.bat && cd ..\server && build.bat && cd ..\ && node ./server

@@ -1,0 +1,21 @@
+{
+  "name": "cardengine",
+  "version": "1.0.0",
+  "main": "./build/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node ./"
+  },
+  "author": "MRH0",
+  "license": "ISC",
+  "dependencies": {
+    "@types/express": "^4.17.7",
+    "@types/node": "^14.0.26",
+    "@types/ws": "^7.2.6",
+    "express": "^4.17.1",
+    "http": "0.0.1-security",
+    "ws": "^7.3.1"
+  },
+  "devDependencies": {},
+  "description": ""
+}
