@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="/resources/uno/style/cards.css">
+        <link rel="stylesheet" type="text/css" href="/resources/uno/style/uno.css">
+        <link rel="stylesheet" type="text/css" href="/resources/uno/style/menu.css">
+        <script type="module" src="/main.js"></script>
+    </head>
+    <body>
+      <div id="dirIndic"></div>
+        <div id="topbar">
+          <div id="players"></div>
+        </div>
+        <div id="board"></div>
+        <div id="card-play"></div>
+        <div id="pile" hide></div>
+        <div id="stack" hide>+0</div>
+        <div id="player-hand"></div>
+        <div id="play-count" hide>
+          <div id="play-all" class="button">Play All</div>
+          <div id="play-one" class="button">Play One</div>
+        </div>
+
+        <div id="frontmessage">
+          <div id="frontmessagebar"></div>
+          <p id="frontmessagetext"></p>
+        </div>
+        <div hide id="colorSelector">
+          <div id="cSelRed"></div>
+          <div id="cSelGreen"></div>
+          <div id="cSelBlue"></div>
+          <div id="cSelYellow"></div>
+        </div>
+
+        <img id="skip-red" class="skip" src="/resources/uno/images/red_skip.png" alt="Skip" hide>
+        <img id="skip-yellow" class="skip" src="/resources/uno/images/yellow_skip.png" alt="Skip" hide>
+        <img id="skip-green" class="skip" src="/resources/uno/images/green_skip.png" alt="Skip" hide>
+        <img id="skip-blue" class="skip" src="/resources/uno/images/blue_skip.png" alt="Skip" hide>
+
+        <div id="quicktime" hide>UNO</div>
+
+        <div id="darkout"></div>
+        <div class="menu" id="bgMenu"></div>
+
+        <div class="menu" id="joinMenu" hide>
+          <div id="joinMenuBack" class="button backButton"><div class="arrow left"></div></div>
+          <p id="joinErrorText"></p>
+          <input type="text" id="joinCodeInput" class="centerButton" placeholder="xxxx" minlength="4" maxlength="4">
+          <div id="joinLobbyButton" class="button centerButton" disable>Join Lobby</div>
+        </div>
+        <div class="menu" id="createMenu" hide>
+          <div id="createMenuBack" class="button backButton"><div class="arrow left"></div></div>
+          <p>public/private lobby</p>
+          <p id="createErrorText"></p>
+          <div id="createLobbyButton" class="button centerButton">Create Lobby</div>
+        </div>
+        <div class="menu" id="aboutMenu" hide>
+          <div id="aboutMenuBack" class="button backButton"><div class="arrow left"></div></div>
+          <p>
+            <b>Web UNO 2 pre-alpha</b>
+            <br/>
+            By mrh0
+          </p>
+        </div>
+
+        <div class="menu" id="lobbyHostMenu" hide>
+          <div id="startButton" class="button centerButton">Start</div>
+          <div id="hostRules"></div>
+        </div>
+
+        <div class="menu" id="lobbyMenu" hide>
+          <div id="readyButton" class="button centerButton">Ready</div>
+          <div id="rules"></div>
+        </div>
+
+        <div class="menu" id="mainMenu">
+          <div id="menuLogo">
+            <div id="menuLogoSpinner"></div>
+          </div>
+          <input type="text" id="nameInput" class="centerButton" placeholder="name" minlength="3" maxlength="12">
+          <div id="joinButton" class="button centerButton" disable>Join</div>
+          <div id="createButton" class="button centerButton" disable>Create</div>
+          <div id="aboutButton" class="button centerButton thinButton">About</div>
+        </div>
+
+        <p id="copyright">© mrh0 2021</p>
+    </body>
+</html>
