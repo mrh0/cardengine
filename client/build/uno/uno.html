@@ -46,12 +46,14 @@
           <div id="joinMenuBack" class="button backButton"><div class="arrow left"></div></div>
           <p id="joinErrorText"></p>
           <input type="text" id="joinCodeInput" class="centerButton" placeholder="xxxx" minlength="4" maxlength="4">
+          <div id="joinPublicList" class="list"></div>
           <div id="joinLobbyButton" class="button centerButton" disable>Join Lobby</div>
         </div>
         <div class="menu" id="createMenu" hide>
           <div id="createMenuBack" class="button backButton"><div class="arrow left"></div></div>
           <p>public/private lobby</p>
           <p id="createErrorText"></p>
+          <input type="text" id="createPasswordInput" class="centerButton" placeholder="password" maxlength="16">
           <div id="createLobbyButton" class="button centerButton">Create Lobby</div>
         </div>
         <div class="menu" id="aboutMenu" hide>
@@ -64,14 +66,22 @@
         </div>
 
         <div class="menu" id="lobbyHostMenu" hide>
+          <div id="rulesButton" class="button centerButton">Rules</div>
           <div id="startButton" class="button centerButton">Start</div>
-          <div id="hostRules"></div>
+          <div id="rules"></div>
+        </div>
+
+        <div class="menu" id="lobbyHostRules" hide>
+          <div id="rulesMenuBack" class="button backButton"><div class="arrow left"></div></div>
+          <p>Rules Page</p>
         </div>
 
         <div class="menu" id="lobbyMenu" hide>
           <div id="readyButton" class="button centerButton">Ready</div>
           <div id="rules"></div>
         </div>
+
+        
 
         <div class="menu" id="mainMenu">
           <div id="menuLogo">

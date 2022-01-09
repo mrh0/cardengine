@@ -181,6 +181,11 @@ window.onload = () => {
                                             startGame();
                                         },
                                         close: (last) => {showMenu("bgMenu"); setVisible("pile", false);}
+                                    },
+                                    'rules-host': {
+                                        name: 'rules-host',
+                                        open: (last) => {showMenu("lobbyHostRules")},
+                                        close: (last) => {hideMenu("lobbyHostRules")}
                                     }
                                 }
                             }
@@ -200,9 +205,12 @@ window.onload = () => {
     addNavigate(menu, "joinButton", "join");
     addNavigate(menu, "createButton", "create");
     addNavigate(menu, "aboutButton", "about");
+    addNavigate(menu, "rulesButton", "rules-host");
+
     addBack(menu, "joinMenuBack");
     addBack(menu, "createMenuBack");
     addBack(menu, "aboutMenuBack");
+    addBack(menu, "rulesMenuBack");
 
     addNavigate(menu, "joinLobbyButton", "joining");
     addNavigate(menu, "createLobbyButton", "creating");
