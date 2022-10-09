@@ -68,10 +68,10 @@ export class UnoGame extends Game<UnoPlayer> {
         return newTurn;
     }
 
-    async onNewTurn(n) {
+    onNewTurn(n) {
         let newTurn = this.getNextTurn(n);
         if(!newTurn)
-            return false;
+            return Promise.resolve(false);
         this.broadcast({type: "game/uno/new-turn", data: {previous: this._turn.getData(), turn: newTurn.getData()}, accepted: true});
         this._turn = newTurn;
         this._turnActionPreformed = false;

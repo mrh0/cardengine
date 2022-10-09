@@ -53,7 +53,7 @@ export abstract class Game<P> {
             this._gameturncount++;
     }
 
-    abstract onNewTurn(n?: number): Promise<void>;
+    abstract onNewTurn(n?: number): Promise<boolean>;
 
     getPlayer(client: Client): P {
         return this._playerdata[client.id];
