@@ -17,7 +17,7 @@ const WILD: Color = {name: "wild", color:"000000", id: 4};
 
 export const COLORS = [RED, YELLOW, GREEN, BLUE, WILD]
 
-export type PendingMessage = {promise: {resolve:(o: object) => any, reject:(reason?: any) => any}, timeout: number};
+export type PendingMessage = {promise: {resolve:(o: object) => any, reject:(reason?: any) => any}, timeout: NodeJS.Timeout};
 export type Packet = {type: string, id?: string, data: any, error?: {reason: string}, accepted: boolean};
 export type ClientNetData = {id: string, name: string, color: number};
 export type LobbyJoinRequest = {name: string, lobby: string};

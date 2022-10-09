@@ -12,7 +12,7 @@ export class MessageHandler {
   }
 
   request<T>(type: string, data = {}) {
-    let timeout: number;
+    let timeout: NodeJS.Timeout;
     let resolve;
     let reject: (reason?: any) => void;
     let pkg = makePacket(type, data);
